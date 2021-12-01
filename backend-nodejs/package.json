@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node expressApp/index.js",
+    "start": "node server.js",
     "migrate-and-seed": "sequelize-cli db:migrate && sequelize-cli db:seed:all",
     "reset-database": "sequelize-cli db:seed:undo:all && sequelize-cli db:migrate:undo:all",
     "refresh-database": "yon run reset-database && yon run migrate-and-seed"
@@ -16,6 +16,8 @@
     "bcrypt": "^4.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "file-upload": "^0.0.0",
     "jsonwebtoken": "^8.5.1",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
